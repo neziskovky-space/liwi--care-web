@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiwiCare liwing.sk</title>
+    <script src="https://cdn.tailwindcss.com"></script>x
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <img src="/api/placeholder/40/40" alt="Logo" class="h-10 w-10"/>
+                    <span class="ml-2 text-xl font-semibold text-gray-900">LiwiCare</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#funkcie" class="text-gray-700 hover:text-gray-900">Funkcie</a>
+                    <a href="#pre-lekarov" class="text-gray-700 hover:text-gray-900">Pre lekárov</a>
+                    <a href="#vyvoj" class="text-gray-700 hover:text-gray-900">Vývoj</a>
+                    <a href="#kontakt" class="text-gray-700 hover:text-gray-900">Kontakt</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="relative bg-gradient-to-r from-blue-50 to-orange-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                    <span class="block">Aplikácia vytvorená</span>
+                    <span class="block text-orange-600">pacientom s SM pre pacientov s SM</span>
+                </h1>
+                <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    Vyvinutá na základe reálnych potrieb pacientov. Zjednodušuje sledovanie symptómov, správu liekov a plánovanie aktivít.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Features Section -->
+    <div class="py-16 bg-white" id="funkcie">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900">Hlavné funkcie</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+                    Vybrané na základe prieskumu potrieb pacientov s SM
+                </p>
+            </div>
+
+            <div class="mt-16">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+                    <!-- Symptom Tracking -->
+                    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-md bg-orange-500 text-white mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Denník symptómov</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Sledovanie bolesti a únavy (škála 1-5)</li>
+                            <li>• Monitoring energie počas dňa</li>
+                            <li>• Fotodokumentácia symptómov</li>
+                            <li>• Rýchle zaznamenanie bežných príznakov</li>
+                        </ul>
+                    </div>
+
+                    <!-- Medication Management -->
+                    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-md bg-orange-500 text-white mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Správa liekov</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Pripomienky užívania liekov</li>
+                            <li>• Sledovanie zásob liekov</li>
+                            <li>• Záznam vedľajších účinkov</li>
+                            <li>• Export pre lekára</li>
+                        </ul>
+                    </div>
+
+                    <!-- Activity Management -->
+                    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <div class="flex items-center justify-center w-12 h-12 rounded-md bg-orange-500 text-white mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Manažment aktivity</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Sledovanie energie</li>
+                            <li>• Časovač odpočinku</li>
+                            <li>• Upozornenia na teplotu</li>
+                            <li>• Odporúčania aktivít</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- For Doctors Section -->
+    <div class="bg-gray-50 py-16" id="pre-lekarov">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-900">Pre zdravotníkov</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+                    Štruktúrované dáta pre lepšie rozhodovanie
+                </p>
+            </div>
+
+            <div class="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">Výhody pre vašu prax</h3>
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Detailné záznamy o príznakoch medzi návštevami</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Monitoring compliance s liečbou</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Efektívnejšie konzultácie vďaka pripraveným reportom</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">Zapojte sa do vývoja</h3>
+                    <p class="text-gray-600 mb-6">
+                        Vyvíjame aplikáciu v úzkej spolupráci s odbornou komunitou. Vaše skúsenosti môžu významne prispieť k vytvoreniu užitočného nástroja pre pacientov s SM.
+                    </p>
+                    <button class="w-full bg-orange-600 text-white px-4 py-2 rounded-md hover:bg-orange-700 transition">
+                        Mám záujem o spoluprácu
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Development Status -->
+    <div class="py-16 bg-white" id="vyvoj">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-center text-gray-900 mb-12">Stav vývoja</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="relative">
+                    <!-- Progress Bar -->
+                    <div class="h-2 bg-gray-200 rounded-full">
+                        <div class="h-2 bg-orange-600 rounded-full" style="width: 40%"></div>
+                    </div>
+                    
+                    <!-- Milestones -->
+                    <div class="mt-6 grid grid-cols-4 gap-4">
+                        <div class="text-center">
+                            <div class="flex items-center justify-center w-8 h-8 mx-auto bg-orange-600 rounded-full text-white">✓</div>
+                            <p class="mt-2 text-sm font-medium text-gray-900">Prieskum potrieb</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="flex items-center justify-center w-8 h-8 mx-auto bg-orange-600 rounded-full text-white">✓</div>
+                            <p class="mt-2 text-sm font-medium text-gray-900">Návrh funkcií</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="flex items-center justify-center w-8 h-8 mx-auto bg-gray-200 rounded-full text-gray-400">3</div>
+                            <p class="mt-2 text-sm font-medium text-gray-500">Testovanie</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="flex items-center justify-center w-8 h-8 mx-auto bg-gray-200 rounded-full text-gray-400">4</div>
+                            <p class="mt-2 text-sm font-medium text-gray-500">Spustenie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="bg-gray-50 py-16" id="kontakt">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-lg mx-auto">
+                <h2 class="text-3xl font-extrabold text-center text-gray-900 mb-8">Kontaktujte nás</h2>
+                
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Meno a priezvisko</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                    
+                    <div>
+                        <label for="type" class="block text-sm font-medium text-gray-700">Som</label>
+                        <select id="type" name="type" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                            <option>Pacient s SM</option>
+                            <option>Lekár/ka</option>
+                            <option>Zdravotnícky pracovník</option>
+                            <option>Iné</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Správa</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500"></textarea>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex items-center h-5">
+                            <input id="privacy" name="privacy" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-orange-600 focus:ring-orange-500">
+                        </div>
+                        <div class="ml-3 text-sm">
+                            <label for="privacy" class="font-medium text-gray-700">Súhlasím so spracovaním osobných údajov</label>
+                            <p class="text-gray-500">Vaše údaje budú použité len na účely komunikácie ohľadom projektu.</p>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
+                        Odoslať správu
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project Info -->
+                <div>
+                    <img src="/api/placeholder/40/40" alt="Logo" class="h-10 w-10 mb-4"/>
+                    <p class="text-gray-500 text-sm">
+                        Neziskový projekt vyvíjaný organizáciou liwing.sk pre podporu pacientov s SM na Slovensku.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Rýchle odkazy</h3>
+                    <ul role="list" class="mt-4 space-y-4">
+                        <li>
+                            <a href="#funkcie" class="text-base text-gray-500 hover:text-gray-900">
+                                Funkcie aplikácie
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#pre-lekarov" class="text-base text-gray-500 hover:text-gray-900">
+                                Pre lekárov
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#vyvoj" class="text-base text-gray-500 hover:text-gray-900">
+                                Stav vývoja
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Kontakt</h3>
+                    <ul role="list" class="mt-4 space-y-4">
+                        <li class="text-base text-gray-500">
+                            Email: info@liwing.sk
+                        </li>
+                        <li class="text-base text-gray-500">
+                            Web: www.liwing.sk
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-8 border-t border-gray-200 pt-8">
+                <p class="text-base text-gray-400 text-center">
+                    &copy; 2025 liwing.sk. Všetky práva vyhradené.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
